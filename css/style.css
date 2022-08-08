@@ -15,31 +15,31 @@ main {
   display: grid;
   place-items: center;
 }
-main #menu-checkbox {
+main .navigation-menu #menu-checkbox {
   display: none;
 }
-main #menu-checkbox:checked + label div:first-child {
+main .navigation-menu #menu-checkbox:checked + label div:first-child {
   top: -6px;
   transform: rotateZ(45deg);
 }
-main #menu-checkbox:checked + label div:last-child {
+main .navigation-menu #menu-checkbox:checked + label div:last-child {
   top: 6px;
   transform: rotateZ(45deg);
 }
-main #menu-checkbox:checked + label div:nth-child(2) {
+main .navigation-menu #menu-checkbox:checked + label div:nth-child(2) {
   width: 85px;
   top: 0;
   right: 13px;
   transform: rotateZ(-45deg);
 }
-main label {
+main .navigation-menu label {
   display: block;
   width: 60px;
   height: 60px;
   margin: 0 auto;
   cursor: pointer;
 }
-main label div {
+main .navigation-menu label div {
   position: relative;
   top: 0;
   height: 12px;
@@ -48,14 +48,14 @@ main label div {
   transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
   border-radius: 2px;
 }
-main label div:first-child {
+main .navigation-menu label div:first-child {
   transform-origin: 0;
 }
-main label div:last-child {
+main .navigation-menu label div:last-child {
   margin-bottom: 0;
   transform-origin: 60px;
 }
-main label div:nth-child(2) {
+main .navigation-menu label div:nth-child(2) {
   right: 0;
   width: 60px;
 }/*# sourceMappingURL=style.css.map */

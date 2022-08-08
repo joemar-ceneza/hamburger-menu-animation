@@ -12,48 +12,50 @@ main{
     min-height: 100vh;
     display: grid;
     place-items: center;
-    #menu-checkbox{
-        display: none;
-        &:checked + label div:first-child{
-            top: -6px;
-            transform: rotateZ(45deg);
+    .navigation-menu{
+        #menu-checkbox{
+            display: none;
+            &:checked + label div:first-child{
+                top: -6px;
+                transform: rotateZ(45deg);
+            }
+            &:checked + label div:last-child{
+                top: 6px;
+                transform: rotateZ(45deg);
+            }
+            &:checked + label div:nth-child(2){
+                width: 85px;
+                top: 0;
+                right: 13px;
+                transform: rotateZ(-45deg);
+            }
         }
-        &:checked + label div:last-child{
-            top: 6px;
-            transform: rotateZ(45deg);
-        }
-        &:checked + label div:nth-child(2){
-            width: 85px;
-            top: 0;
-            right: 13px;
-            transform: rotateZ(-45deg);
-        }
-    }
-    label{
-        display: block;
-        width: 60px;
-        height: 60px;
-        margin: 0 auto;
-        cursor: pointer;
-        div{
-            position: relative;
-            top: 0;
-            height: 12px;
-            background-color: #fff;
-            margin-bottom: 12px;
-            transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
-            border-radius: 2px;
-        }
-        div:first-child{
-            transform-origin: 0;
-        }
-        div:last-child{
-            margin-bottom: 0;
-            transform-origin: 60px;
-        }
-        div:nth-child(2){
-            right: 0;
+        label{
+            display: block;
             width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            cursor: pointer;
+            div{
+                position: relative;
+                top: 0;
+                height: 12px;
+                background-color: #fff;
+                margin-bottom: 12px;
+                transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+                border-radius: 2px;
+            }
+            div:first-child{
+                transform-origin: 0;
+            }
+            div:last-child{
+                margin-bottom: 0;
+                transform-origin: 60px;
+            }
+            div:nth-child(2){
+                right: 0;
+                width: 60px;
+            }
         }
     }
 }
