@@ -15,31 +15,31 @@ main {
   display: grid;
   place-items: center;
 }
-main .navigation-menu #menu-checkbox {
+main .nav-hamburger-menu #menu-checkbox {
   display: none;
 }
-main .navigation-menu #menu-checkbox:checked + label div:first-child {
+main .nav-hamburger-menu #menu-checkbox:checked + label div:first-child {
   top: -6px;
   transform: rotateZ(45deg);
 }
-main .navigation-menu #menu-checkbox:checked + label div:last-child {
+main .nav-hamburger-menu #menu-checkbox:checked + label div:last-child {
   top: 6px;
   transform: rotateZ(45deg);
 }
-main .navigation-menu #menu-checkbox:checked + label div:nth-child(2) {
+main .nav-hamburger-menu #menu-checkbox:checked + label div:nth-child(2) {
   width: 85px;
   top: 0;
   right: 13px;
   transform: rotateZ(-45deg);
 }
-main .navigation-menu label {
+main .nav-hamburger-menu label {
   display: block;
   width: 60px;
   height: 60px;
   margin: 0 auto;
   cursor: pointer;
 }
-main .navigation-menu label div {
+main .nav-hamburger-menu label div {
   position: relative;
   top: 0;
   height: 12px;
@@ -48,14 +48,14 @@ main .navigation-menu label div {
   transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
   border-radius: 2px;
 }
-main .navigation-menu label div:first-child {
+main .nav-hamburger-menu label div:first-child {
   transform-origin: 0;
 }
-main .navigation-menu label div:last-child {
+main .nav-hamburger-menu label div:last-child {
   margin-bottom: 0;
   transform-origin: 60px;
 }
-main .navigation-menu label div:nth-child(2) {
+main .nav-hamburger-menu label div:nth-child(2) {
   right: 0;
   width: 60px;
 }/*# sourceMappingURL=style.css.map */
